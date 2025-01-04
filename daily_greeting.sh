@@ -43,7 +43,7 @@ function onetime_message() {
 daily_mes="$(onetime_message)" 
 
 # dependent on time of day
-cur_time=$(date "+%H")
+cur_time=$(date "+%_H")
 if [ "$cur_time" -ge "22" ] || [ "$cur_time" -le "5" ] ; then
     daily_mes="$daily_mes
 	
